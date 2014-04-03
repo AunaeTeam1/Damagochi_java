@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+
+public class tamagochi {
+
+	public static void main(String[] args) {
+		char ch = ' ';
+		
+		System.out.println("\n무엇을 하시겠습니까?(숫자로 입력하시오.)");
+		System.out.println("\n1.먹이주기 // 2.훈련하기 // 3.잠자기");
+		System.out.print("\n입력: ");
+		Scanner input = new Scanner(System.in);
+		
+		ch = input.next().charAt(0);
+		
+		
+			if(ch == '1')
+			{
+				Hungry();
+			}
+			else if(ch == '2')
+			{
+				Training();
+			}
+			else if(ch == '3')
+			{
+				System.out.print("\nGood Night");
+			}
+			else
+			{
+				System.exit(0);
+				break;
+			}
+	}
+
+	private static void Training() {
+		//작성중
+	}
+
+	private static void Hungry() {
+		//작성중
+	}
